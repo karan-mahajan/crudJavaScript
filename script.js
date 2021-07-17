@@ -1,6 +1,8 @@
 "use strict";
 let edit;
 
+console.log('Welcome to Console');
+
 const countryName = document.querySelector('.inputCountry');
 const countryElement = document.querySelector('.countriesBody');
 const editCountryName = document.querySelector('.editCountry');
