@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>CRUD Operations</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <form action="javascript:void(0);">
+          <input
+            type="text"
+            class="inputCountry"
+            placeholder="Enter any Country"
+          />
+          <button type="submit" onclick="addCountry()">Add Country</button>
+        </form>
+        <div style="margin-top: 10px">
+          <form
+            action="javascript:void(0);"
+            style="display: none"
+            class="editForm"
+          >
+            <input class="editCountry" />
+            <button type="submit" onclick="editCountry()">Edit Country</button>
+          </form>
+        </div>
+        <p class="countryCount"></p>
+        <table>
+          <tr>
+            <th>Name</th>
+          </tr>
+          <tbody class="countriesBody"></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
